@@ -1530,17 +1530,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   max-width: 960px;
   margin: 3.5rem auto 0;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
 }
 
 .testimonial-slider {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
 }
 
 .testimonial-slide {
   min-width: 100%;
-  padding: 0 1rem;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 0.5rem;
 }
 
 .testimonial-card {
