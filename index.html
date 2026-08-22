@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Tags -->
+  <title>ApexCare Health | Luxury Medical Center & World-Class Specialists</title>
+  <meta name="description" content="ApexCare Health is a premier hospital and clinic delivering world-class medical excellence, robotic surgery, advanced diagnostics, and compassionate 24/7 care.">
+  <meta name="keywords" content="hospital, clinic, medical center, healthcare, doctor appointment, cardiology, neurology, robotic surgery, emergency care">
+  <meta name="author" content="ApexCare Health Systems">
+  
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ApexCare Health | World-Class Medical Center">
+  <meta property="og:description" content="Advanced Healthcare. Designed Around You. 25+ years of clinical excellence, JCI accredited medical center.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ApexCare Health | World-Class Medical Center">
+  <meta name="twitter:description" content="Advanced Healthcare. Designed Around You. 25+ years of clinical excellence.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts & Font Awesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core & Responsive Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Three.js & GSAP Animation CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  
+  <!-- Custom JS Modules -->
+  <script src="js/three-scene.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       TOP UTILITY BAR
+       ========================================================================= -->
+  <aside class="top-bar" aria-label="Hospital Contact Information">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item emergency-text">
+          <i class="fa-solid fa-truck-medical"></i> 24/7 Rapid Emergency Hotline: <strong>+1 (800) 794-CARE</strong>
+        </span>
+        <span class="top-bar-item">
+          <i class="fa-solid fa-location-dot"></i> 100 Apex Plaza, Suite 500, Medical District
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item">
+          <i class="fa-regular fa-clock"></i> Mon – Sun: 24 Hours Open
+        </span>
+        <div class="top-socials" aria-label="Social links">
+          <a href="#contact" class="top-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#contact" class="top-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#contact" class="top-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#contact" class="top-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       STICKY NAVBAR
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+      <a href="#home" class="nav-brand" aria-label="ApexCare Health Homepage">
+        <div class="brand-emblem">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">ApexCare</span>
+          <span class="brand-subtitle">Health & Clinic</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#specialists" class="nav-link">Specialists</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#pricing" class="nav-link">Plans</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-emergency" id="nav-emergency-btn">
+          <i class="fa-solid fa-phone-volume"></i> Emergency
+        </a>
+        <a href="#contact" class="btn btn-primary" id="nav-book-btn">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+        <button class="mobile-toggle-btn" id="mobile-menu-open-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MOBILE NAVIGATION DRAWER
+       ========================================================================= -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <div class="mobile-drawer-header">
+        <div class="nav-brand">
+          <div class="brand-emblem">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">ApexCare</span>
+            <span class="brand-subtitle">Health & Clinic</span>
+          </div>
+        </div>
+        <button class="mobile-close-btn" id="mobile-menu-close-btn" aria-label="Close Navigation Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+        <a href="#home" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#about" class="mobile-nav-link">About <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#services" class="mobile-nav-link">Services <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#technology" class="mobile-nav-link">Technology <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#specialists" class="mobile-nav-link">Specialists <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#testimonials" class="mobile-nav-link">Testimonials <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#pricing" class="mobile-nav-link">Pricing & Plans <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#faq" class="mobile-nav-link">FAQ <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="#contact" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary" style="width: 100%; margin-bottom: 0.8rem;">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+        <a href="tel:18007942273" class="btn btn-emergency" style="width: 100%;">
+          <i class="fa-solid fa-phone-volume"></i> Emergency: (800) 794-CARE
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO SECTION WITH THREE.JS MEDICAL 3D EXPERIENCE
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="section-tag tag-dark">
+            <i class="fa-solid fa-shield-halved"></i> JCI ACCREDITED & WORLD-RANKED EXCELLENCE
+          </div>
+          <h1 class="hero-headline">
+            Advanced Healthcare.<br>
+            <span class="text-gradient">Designed Around You.</span>
+          </h1>
+          <p class="hero-lead">
+            Pioneering robotic precision, genomic diagnostics, and compassionate 24/7 care. Experience hospital treatments delivered by internationally recognized medical leaders.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-calendar-plus"></i> Book Consultation
+            </a>
+            <a href="#services" class="btn btn-glass">
+              <i class="fa-solid fa-stethoscope"></i> Explore Departments
+            </a>
+          </div>
+
+          <!-- Trust Metrics & Verified Stack -->
+          <div class="hero-trust-metrics">
+            <div class="trust-metric-item">
+              <span class="metric-number">25+</span>
+              <span class="metric-label">Years of Excellence</span>
+            </div>
+            <div class="trust-metric-item">
+              <span class="metric-number">99.4%</span>
+              <span class="metric-label">Clinical Precision</span>
+            </div>
+            <div class="trust-metric-item">
+              <div class="trust-avatar-group">
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=100&q=80" alt="Doctor avatar" class="trust-avatar" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1594824813596-f94c483d7fa8?auto=format&fit=crop&w=100&q=80" alt="Doctor avatar" class="trust-avatar" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=100&q=80" alt="Doctor avatar" class="trust-avatar" loading="lazy">
+              </div>
+              <span class="metric-label">50,000+ Patients Served</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Stage with 3D Canvas -->
+        <div class="hero-visual-stage">
+          <div id="three-medical-canvas" class="three-canvas-container" aria-label="3D Interactive Medical Experience"></div>
+
+          <!-- Floating Telemetry Card 1 -->
+          <div class="floating-telemetry-card telemetry-card-top">
+            <div class="telemetry-icon-box icon-sapphire">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+            <div class="telemetry-info">
+              <span class="telemetry-title">Genomic Precision</span>
+              <span class="telemetry-value">99.8% Accuracy</span>
+            </div>
+          </div>
+
+          <!-- Floating Telemetry Card 2 -->
+          <div class="floating-telemetry-card telemetry-card-bottom">
+            <div class="telemetry-icon-box icon-emerald">
+              <i class="fa-solid fa-bed-pulse"></i>
+            </div>
+            <div class="telemetry-info">
+              <span class="telemetry-title">Emergency Response</span>
+              <span class="telemetry-value">&lt; 15 Min Trauma Triage</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       QUICK ACTION & EMERGENCY STRIP
+       ========================================================================= -->
+  <section class="quick-action-strip" aria-label="Quick Hospital Actions">
+    <div class="container">
+      <div class="action-strip-card">
+        
+        <a href="#specialists" class="action-item">
+          <div class="action-icon">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <div class="action-content">
+            <h4>Find a Specialist</h4>
+            <p>150+ Board certified doctors</p>
+          </div>
+        </a>
+
+        <a href="#contact" class="action-item">
+          <div class="action-icon">
+            <i class="fa-regular fa-calendar-check"></i>
+          </div>
+          <div class="action-content">
+            <h4>Book Appointment</h4>
+            <p>Instant online scheduling</p>
+          </div>
+        </a>
+
+        <a href="tel:18007942273" class="action-item action-emergency">
+          <div class="action-icon">
+            <i class="fa-solid fa-ambulance"></i>
+          </div>
+          <div class="action-content">
+            <h4>24/7 Emergency ICU</h4>
+            <p>Immediate ambulance dispatch</p>
+          </div>
+        </a>
+
+        <a href="#technology" class="action-item">
+          <div class="action-icon">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+          <div class="action-content">
+            <h4>Diagnostics & Labs</h4>
+            <p>Same-day imaging & reports</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT & INNOVATION SECTION
+       ========================================================================= -->
+  <section class="section-pad about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Image Composition -->
+        <div class="about-visual-composition">
+          <div class="about-main-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80" alt="ApexCare state of the art modern hospital interior" class="about-main-img" loading="lazy">
+          </div>
+          <div class="about-floating-experience">
+            <span class="exp-number">25+</span>
+            <div class="exp-text">
+              Years of World-Class<br>Clinical Excellence
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-hospital"></i> REDEFINING HEALTHCARE
+          </div>
+          <h2 class="section-title">
+            Where Human Empathy Meets <span class="text-gradient">Breakthrough Science</span>
+          </h2>
+          <p class="section-desc">
+            Founded with an uncompromising standard of medical innovation, ApexCare Health brings together world-renowned surgeons, leading diagnostic systems, and five-star hospitality to provide patient-first medical treatments.
+          </p>
+
+          <div class="about-feature-list">
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="about-feature-text">
+                <h5>Robotic Surgical Precision</h5>
+                <p>Minimally invasive operations with rapid recovery.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="about-feature-text">
+                <h5>AI-Powered Diagnostics</h5>
+                <p>Early biomarker detection with high accuracy.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="about-feature-text">
+                <h5>Zero-Wait Emergency Care</h5>
+                <p>Level-1 trauma center ready around the clock.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div class="about-feature-text">
+                <h5>Private Recovery Suites</h5>
+                <p>Luxury inpatient suites with dedicated care teams.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#services" class="btn btn-primary">
+            <i class="fa-solid fa-circle-arrow-right"></i> Discover Our Standards
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SPECIALIZED MEDICAL SERVICES & DEPARTMENTS
+       ========================================================================= -->
+  <section class="section-pad services-section" id="services">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-stethoscope"></i> CLINICAL SPECIALTIES
+        </div>
+        <h2 class="section-title">Specialized Medical Care</h2>
+        <p class="section-desc">
+          Our specialized centers of excellence integrate multidisciplinary teams to provide individualized treatment plans across all medical domains.
+        </p>
+      </div>
+
+      <!-- Department Filter Tabs -->
+      <div class="service-filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Departments</button>
+        <button class="filter-tab" data-filter="cardio">Cardiology</button>
+        <button class="filter-tab" data-filter="neuro">Neurology</button>
+        <button class="filter-tab" data-filter="ortho">Orthopedics</button>
+        <button class="filter-tab" data-filter="surgery">Surgical Suite</button>
+        <button class="filter-tab" data-filter="emergency">Emergency Care</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="services-grid-container">
+        
+        <!-- 1. Cardiology -->
+        <article class="service-card" data-category="cardio">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>Cardiology & Heart Surgery</h3>
+            <p>Comprehensive cardiac care including robotic bypass, electrophysiology, catheterization, and structural heart repairs.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 2. Neurology -->
+        <article class="service-card" data-category="neuro">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Neurology & Neurosurgery</h3>
+            <p>Precision neuro-navigation, stroke intervention, spine restoration, and neuro-oncology led by international neurosurgeons.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 3. Orthopedics -->
+        <article class="service-card" data-category="ortho surgery">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <h3>Orthopedics & Joint Center</h3>
+            <p>Robotic total joint replacement, sports medicine, spinal correction, and regenerative biologic therapies for swift mobility.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 4. Oncology -->
+        <article class="service-card" data-category="surgery">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3>Oncology & Precision Genomics</h3>
+            <p>Targeted immunotherapy, precision molecular oncology, stereotactic radiation, and comprehensive cancer rehabilitation.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 5. Pediatrics -->
+        <article class="service-card" data-category="all">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <h3>Pediatrics & Neonatal ICU</h3>
+            <p>Specialized pediatric surgery, child neurology, cardiology, and Level-IV neonatal intensive care tailored with tender warmth.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 6. Emergency -->
+        <article class="service-card" data-category="emergency">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3>Emergency Trauma & ICU</h3>
+            <p>24/7 Level-1 trauma response, air ambulance transport, dedicated resus suites, and real-time hemodynamic monitoring.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 7. Diagnostics -->
+        <article class="service-card" data-category="all">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-x-ray"></i>
+            </div>
+            <h3>Advanced Diagnostic Imaging</h3>
+            <p>Ultra-high field 3.0T MRI, 512-slice spectral CT, digital 3D mammography, and PET-CT molecular imaging.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- 8. Women's Health -->
+        <article class="service-card" data-category="surgery">
+          <div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-person-breastfeeding"></i>
+            </div>
+            <h3>Women's Health & Maternity</h3>
+            <p>Luxury birthing suites, maternal-fetal medicine, minimally invasive gynecology, and comprehensive hormonal wellness.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            <span>Schedule Consultation</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MEDICAL TECHNOLOGY & INNOVATION SUITE
+       ========================================================================= -->
+  <section class="section-pad tech-section" id="technology">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag tag-dark">
+          <i class="fa-solid fa-microchip"></i> NEXT-GEN MEDICAL INFRASTRUCTURE
+        </div>
+        <h2 class="section-title title-white">Powered by Clinical Innovation</h2>
+        <p class="section-desc desc-white">
+          We invest in leading medical equipment and AI-assisted diagnostic tools to maximize safety, precision, and treatment outcomes.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        
+        <!-- Tech 1 -->
+        <div class="tech-card">
+          <div class="tech-img-wrap">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=700&q=80" alt="Da Vinci Surgical Suite" class="tech-img" loading="lazy">
+            <span class="tech-badge">Sub-Millimeter</span>
+          </div>
+          <div class="tech-body">
+            <h4>Da Vinci Xi Robotic Suite</h4>
+            <p>Robotic multi-jointed surgical arms providing 3D HD visualization and tremor filtration for minimally invasive operations.</p>
+          </div>
+        </div>
+
+        <!-- Tech 2 -->
+        <div class="tech-card">
+          <div class="tech-img-wrap">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="High Resolution MRI" class="tech-img" loading="lazy">
+            <span class="tech-badge">3.0 Tesla Field</span>
+          </div>
+          <div class="tech-body">
+            <h4>BioMatrix 3.0T MRI Imaging</h4>
+            <p>Deep-learning accelerated magnetic resonance delivering crystal-clear neurological and musculoskeletal scan resolutions.</p>
+          </div>
+        </div>
+
+        <!-- Tech 3 -->
+        <div class="tech-card">
+          <div class="tech-img-wrap">
+            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=700&q=80" alt="AI Genomic Pathology" class="tech-img" loading="lazy">
+            <span class="tech-badge">AI Accelerated</span>
+          </div>
+          <div class="tech-body">
+            <h4>AI Genomic Sequencing</h4>
+            <p>High-throughput genomic biomarker mapping for tailored oncological therapy and preventative longevity analysis.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ANIMATED CLINICAL STATISTICS
+       ========================================================================= -->
+  <section class="stats-strip" aria-label="Clinical Metrics and Numbers">
+    <div class="container">
+      <div class="stats-grid">
+        
+        <div class="stat-item">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-title">Years Experience</span>
+          <span class="stat-subtext">Continuous Healthcare Leadership</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-number" data-target="150">0</span>
+          <span class="stat-title">Medical Specialists</span>
+          <span class="stat-subtext">Board Certified International Doctors</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-title">Thousand Patients</span>
+          <span class="stat-subtext">Treated with 99.4% Success</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-number" data-target="99">0</span>
+          <span class="stat-title">Satisfaction Rate</span>
+          <span class="stat-subtext">Verified Patient Reviews</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DISTINGUISHED MEDICAL SPECIALISTS
+       ========================================================================= -->
+  <section class="section-pad doctors-section" id="specialists">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-user-doctor"></i> WORLD-CLASS FACULTY
+        </div>
+        <h2 class="section-title">Meet Our Leading Specialists</h2>
+        <p class="section-desc">
+          Our department chairs and senior consultants are internationally recognized researchers, clinicians, and educators in modern medicine.
+        </p>
+      </div>
+
+      <div class="doctors-grid">
+        
+        <!-- Doctor 1 -->
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=80" alt="Dr. Alexander Wright, Chief of Cardiology" class="doctor-img" loading="lazy">
+            <span class="doctor-specialty-badge">Cardiology</span>
+          </div>
+          <div class="doctor-info">
+            <div>
+              <h4 class="doctor-name">Dr. Alexander Wright</h4>
+              <p class="doctor-degree">MD, FACS, Harvard Medical Fellow</p>
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(4.9 • 340+ Reviews)</span>
+              </div>
+            </div>
+            <div class="doctor-actions">
+              <span style="font-size: 0.8rem; color: var(--slate-500);"><i class="fa-solid fa-circle-check" style="color: var(--emerald-500);"></i> 18+ Yrs Exp</span>
+              <a href="#contact" class="doctor-btn-book">Book Dr. Wright <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594824813596-f94c483d7fa8?auto=format&fit=crop&w=700&q=80" alt="Dr. Elena Rostova, Neurosurgeon" class="doctor-img" loading="lazy">
+            <span class="doctor-specialty-badge">Neurosurgery</span>
+          </div>
+          <div class="doctor-info">
+            <div>
+              <h4 class="doctor-name">Dr. Elena Rostova</h4>
+              <p class="doctor-degree">MD, PhD, Oxford Neuro Institute</p>
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5.0 • 410+ Reviews)</span>
+              </div>
+            </div>
+            <div class="doctor-actions">
+              <span style="font-size: 0.8rem; color: var(--slate-500);"><i class="fa-solid fa-circle-check" style="color: var(--emerald-500);"></i> 15+ Yrs Exp</span>
+              <a href="#contact" class="doctor-btn-book">Book Dr. Elena <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=700&q=80" alt="Dr. Marcus Vance, Orthopedic Surgery" class="doctor-img" loading="lazy">
+            <span class="doctor-specialty-badge">Orthopedics</span>
+          </div>
+          <div class="doctor-info">
+            <div>
+              <h4 class="doctor-name">Dr. Marcus Vance</h4>
+              <p class="doctor-degree">MD, FAAOS, Johns Hopkins</p>
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(4.9 • 280+ Reviews)</span>
+              </div>
+            </div>
+            <div class="doctor-actions">
+              <span style="font-size: 0.8rem; color: var(--slate-500);"><i class="fa-solid fa-circle-check" style="color: var(--emerald-500);"></i> 20+ Yrs Exp</span>
+              <a href="#contact" class="doctor-btn-book">Book Dr. Marcus <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 4 -->
+        <div class="doctor-card">
+          <div class="doctor-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80" alt="Dr. Sarah Chen, Oncology & Genomics" class="doctor-img" loading="lazy">
+            <span class="doctor-specialty-badge">Genomic Oncology</span>
+          </div>
+          <div class="doctor-info">
+            <div>
+              <h4 class="doctor-name">Dr. Sarah Chen</h4>
+              <p class="doctor-degree">MD, Stanford Precision Medicine</p>
+              <div class="doctor-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5.0 • 390+ Reviews)</span>
+              </div>
+            </div>
+            <div class="doctor-actions">
+              <span style="font-size: 0.8rem; color: var(--slate-500);"><i class="fa-solid fa-circle-check" style="color: var(--emerald-500);"></i> 14+ Yrs Exp</span>
+              <a href="#contact" class="doctor-btn-book">Book Dr. Chen <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PATIENT TESTIMONIALS & CLINICAL STORIES
+       ========================================================================= -->
+  <section class="section-pad testimonials-section" id="testimonials">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag tag-dark">
+          <i class="fa-solid fa-comment-medical"></i> PATIENT STORIES
+        </div>
+        <h2 class="section-title title-white">Transforming Lives Every Day</h2>
+        <p class="section-desc desc-white">
+          Read genuine experiences from patients who entrusted their health and surgical care to ApexCare Medical.
+        </p>
+      </div>
+
+      <!-- Testimonial Carousel -->
+      <div class="testimonial-carousel-wrap">
+        <div class="testimonial-slider" id="testimonial-slider">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="testimonial-quote">
+                "The robotic cardiac surgery performed by Dr. Wright and the ApexCare team was nothing short of miraculous. From admission to the luxury inpatient recovery suite, I felt safe, informed, and genuinely cared for. I was back walking within three days."
+              </p>
+              <div class="testimonial-author-row">
+                <div class="author-info-wrap">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Robert Sterling" class="author-avatar" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Robert Sterling</h4>
+                    <span class="author-procedure"><i class="fa-solid fa-circle-check"></i> Robotic Heart Valve Procedure • Verified Patient</span>
+                  </div>
+                </div>
+                <div style="color: #F59E0B; font-size: 1rem;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="testimonial-quote">
+                "Dr. Rostova diagnosed my neurological condition with the AI 3.0T MRI within hours after two other hospitals spent weeks guessing. The precision navigation surgery cured my chronic pain completely. The staff is exceptional."
+              </p>
+              <div class="testimonial-author-row">
+                <div class="author-info-wrap">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Claire Kensington" class="author-avatar" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Claire Kensington</h4>
+                    <span class="author-procedure"><i class="fa-solid fa-circle-check"></i> Micro-Neurosurgery • Verified Patient</span>
+                  </div>
+                </div>
+                <div style="color: #F59E0B; font-size: 1rem;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="testimonial-quote">
+                "The Executive Health checkup exceeded every expectation. Seamless concierge coordination, zero waiting time, and deeply insightful genomic biomarkers review with Dr. Chen. Truly the gold standard in modern preventative healthcare."
+              </p>
+              <div class="testimonial-author-row">
+                <div class="author-info-wrap">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Sterling" class="author-avatar" loading="lazy">
+                  <div>
+                    <h4 class="author-name">David Sterling</h4>
+                    <span class="author-procedure"><i class="fa-solid fa-circle-check"></i> Executive Wellness Member • Verified Patient</span>
+                  </div>
+                </div>
+                <div style="color: #F59E0B; font-size: 1rem;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="carousel-nav-buttons">
+          <button class="carousel-arrow" id="carousel-prev" aria-label="Previous Testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carousel-dots-container">
+            <span class="carousel-dot active" data-index="0"></span>
+            <span class="carousel-dot" data-index="1"></span>
+            <span class="carousel-dot" data-index="2"></span>
+          </div>
+          <button class="carousel-arrow" id="carousel-next" aria-label="Next Testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       HEALTHCARE PLANS & EXECUTIVE WELLNESS
+       ========================================================================= -->
+  <section class="section-pad pricing-section" id="pricing">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-file-invoice-dollar"></i> TRANSPARENT HEALTHCARE
+        </div>
+        <h2 class="section-title">Comprehensive Health Plans</h2>
+        <p class="section-desc">
+          Structured diagnostic screening and wellness memberships for individuals, executives, and families seeking proactive medical protection.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <!-- Plan 1 -->
+        <div class="pricing-card">
+          <div>
+            <h3 class="plan-name">Essential Care</h3>
+            <p class="plan-desc">Annual preventative screenings and routine medical consultations.</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">299</span>
+              <span class="plan-period">/ year</span>
+            </div>
+            <div class="plan-feature-list">
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Comprehensive Blood Chemistry</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> 12-Lead Electrocardiogram (ECG)</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Bi-Annual Specialist Consultations</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Digital Health Portal Access</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-secondary" style="width: 100%;">Select Essential</a>
+        </div>
+
+        <!-- Plan 2 (Featured) -->
+        <div class="pricing-card featured-plan">
+          <span class="plan-badge">MOST POPULAR</span>
+          <div>
+            <h3 class="plan-name">Executive Care</h3>
+            <p class="plan-desc">Advanced multi-organ screening, 3.0T MRI, and priority clinical scheduling.</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">799</span>
+              <span class="plan-period">/ year</span>
+            </div>
+            <div class="plan-feature-list">
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Everything in Essential Care</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Full Body 3.0T MRI & Coronary CT</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> 24/7 Dedicated Doctor Concierge</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Zero-Wait Emergency Fast-Track</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Nutrition & Genomic Longevity Plan</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="width: 100%;">Select Executive</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="pricing-card">
+          <div>
+            <h3 class="plan-name">Platinum Longevity</h3>
+            <p class="plan-desc">Full genomic sequencing, private suite inpatient care, and VIP global medical coverage.</p>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">1,899</span>
+              <span class="plan-period">/ year</span>
+            </div>
+            <div class="plan-feature-list">
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Everything in Executive Care</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Complete Whole-Exome Genomic Sequencing</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Private VIP Suite Inpatient Guarantee</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Global Air Ambulance Medical Evac</div>
+              <div class="plan-feature-item"><i class="fa-solid fa-check"></i> Quarterly Executive Wellness Retreats</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-secondary" style="width: 100%;">Select Platinum</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================================================= -->
+  <section class="section-pad faq-section" id="faq">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-circle-question"></i> FREQUENT QUESTIONS
+        </div>
+        <h2 class="section-title">Answers to Common Inquiries</h2>
+        <p class="section-desc">
+          Learn more about our appointment process, insurance network, surgical procedures, and emergency protocol.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            <span>How do I book an appointment with a specialist?</span>
+            <div class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>You can schedule instantly using our online appointment portal below, select your preferred doctor and time slot, or call our 24/7 patient concierge at +1 (800) 794-CARE. We offer both in-person hospital visits and encrypted HD telehealth consultations.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you accept emergency patients without prior booking?</span>
+            <div class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Our Level-1 Trauma and Emergency Center operates 24 hours a day, 365 days a year with zero wait times for critical emergencies. Dedicated triage teams, cardiac cath labs, and trauma surgeons are on continuous standby.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What international insurance networks do you accept?</span>
+            <div class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>ApexCare Health is in-network with over 45 major health insurance providers globally, including Bupa International, Allianz Worldwide, Cigna Global, BlueCross BlueShield, and Aetna. Our billing coordinators handle all direct claims seamlessly.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How quickly can I receive diagnostic MRI and lab results?</span>
+            <div class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Standard laboratory and blood diagnostics are processed within 2 to 4 hours. 3.0T MRI, CT, and specialized ultrasound scans receive priority radiology interpretation within 24 hours, delivered straight to your secure patient portal.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What safety protocols are followed in your robotic surgical suites?</span>
+            <div class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Our surgical suites feature laminar positive-pressure air filtration, ultra-violet sterilization between every operation, and real-time biometric tracking adhering strictly to Joint Commission International (JCI) gold safety protocols.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I request a second opinion from international medical leaders?</span>
+            <div class="faq-toggle-icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Our global multidisciplinary tumor board and cardiac review committee regularly provide comprehensive second opinions on complex cases, reviewing existing medical records and pathology slides with complete clarity.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT & APPOINTMENT BOOKING
+       ========================================================================= -->
+  <section class="section-pad contact-section" id="contact">
+    <div class="container">
+      
+      <div class="text-center">
+        <div class="section-tag tag-dark">
+          <i class="fa-solid fa-envelope"></i> CONNECT WITH APEXCARE
+        </div>
+        <h2 class="section-title title-white">Book an Appointment or Inquire</h2>
+        <p class="section-desc desc-white">
+          Our patient coordinators are available around the clock to schedule your visit, answer clinical inquiries, or assist with emergency transfers.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Information Panel -->
+        <div class="contact-info-panel">
+          <div>
+            <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 1rem;">Medical Campus & Center</h3>
+            <p style="color: var(--slate-300); font-size: 0.95rem; line-height: 1.7;">
+              Located conveniently in the central medical district, our state-of-the-art campus features private parking, helipad emergency access, and accessible entrances for all patients.
+            </p>
+
+            <div class="contact-card-list">
+              
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-detail-body">
+                  <h5>Hospital Campus</h5>
+                  <p>100 Apex Plaza, Suite 500, Medical District, NY 10021</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="contact-detail-body">
+                  <h5>Emergency & Appointments</h5>
+                  <p>+1 (800) 794-CARE / +1 (212) 555-0199</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <div class="contact-detail-body">
+                  <h5>Clinical Email</h5>
+                  <p>admissions@apexcarehealth.org</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="contact-detail-icon"><i class="fa-regular fa-clock"></i></div>
+                <div class="contact-detail-body">
+                  <h5>Operating Hours</h5>
+                  <p>Emergency & Inpatient: 24/7 • Outpatient: 7 AM – 9 PM</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="accreditation-row">
+            <span class="accreditation-badge"><i class="fa-solid fa-award"></i> JCI Certified</span>
+            <span class="accreditation-badge"><i class="fa-solid fa-lock"></i> HIPAA Compliant</span>
+            <span class="accreditation-badge"><i class="fa-solid fa-shield-halved"></i> ISO 9001:2015</span>
+          </div>
+        </div>
+
+        <!-- Appointment Submission Form -->
+        <div class="booking-form-wrap">
+          <div class="booking-form-header">
+            <h3>Schedule Clinical Consultation</h3>
+            <p>Fill out the details below and our concierge will confirm your appointment within 15 minutes.</p>
+          </div>
+
+          <form id="appointment-form" novalidate>
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="patient-name" class="form-label">Full Name *</label>
+                <input type="text" id="patient-name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="patient-phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="patient-phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="patient-email" class="form-label">Email Address *</label>
+                <input type="email" id="patient-email" class="form-input" placeholder="eleanor@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="appointment-dept" class="form-label">Department *</label>
+                <select id="appointment-dept" class="form-select" required>
+                  <option value="" disabled selected>Select Medical Specialty</option>
+                  <option value="cardiology">Cardiology & Heart Surgery</option>
+                  <option value="neurology">Neurology & Neurosurgery</option>
+                  <option value="orthopedics">Orthopedics & Joint Care</option>
+                  <option value="oncology">Oncology & Genomics</option>
+                  <option value="pediatrics">Pediatrics & Neonatal</option>
+                  <option value="diagnostics">3.0T Diagnostic Imaging</option>
+                  <option value="wellness">Executive Health Checkup</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="appointment-doctor" class="form-label">Preferred Specialist</label>
+                <select id="appointment-doctor" class="form-select">
+                  <option value="any">First Available Senior Consultant</option>
+                  <option value="dr-wright">Dr. Alexander Wright (Cardiology)</option>
+                  <option value="dr-rostova">Dr. Elena Rostova (Neurosurgery)</option>
+                  <option value="dr-vance">Dr. Marcus Vance (Orthopedics)</option>
+                  <option value="dr-chen">Dr. Sarah Chen (Oncology)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="appointment-date" class="form-label">Preferred Date *</label>
+                <input type="date" id="appointment-date" class="form-input" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="patient-message" class="form-label">Reason for Visit / Symptoms (Optional)</label>
+                <textarea id="patient-message" class="form-textarea" placeholder="Briefly describe your symptoms or requested health service..."></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem;">
+                  <i class="fa-regular fa-paper-plane"></i> Confirm & Book Appointment
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Toast Success Message -->
+            <div id="form-toast-msg" class="form-toast success" role="alert">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Thank you! Your appointment request has been submitted. A patient coordinator will contact you shortly.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SOPHISTICATED FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand -->
+        <div class="footer-brand-col">
+          <a href="#home" class="nav-brand">
+            <div class="brand-emblem">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">ApexCare</span>
+              <span class="brand-subtitle">Health & Clinic</span>
+            </div>
+          </a>
+          <p>
+            An internationally ranked medical institution dedicated to precision robotic surgery, proactive preventative healthcare, and compassionate clinical care.
+          </p>
+          <div class="footer-social-links">
+            <a href="#contact" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#contact" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#contact" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#contact" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#about" class="footer-link"><i class="fa-solid fa-angle-right"></i> About Our Hospital</a>
+            <a href="#specialists" class="footer-link"><i class="fa-solid fa-angle-right"></i> Medical Specialists</a>
+            <a href="#technology" class="footer-link"><i class="fa-solid fa-angle-right"></i> Robotic Surgical Suites</a>
+            <a href="#testimonials" class="footer-link"><i class="fa-solid fa-angle-right"></i> Patient Stories</a>
+            <a href="#pricing" class="footer-link"><i class="fa-solid fa-angle-right"></i> Healthcare Plans</a>
+            <a href="#faq" class="footer-link"><i class="fa-solid fa-angle-right"></i> Patient FAQ</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Departments -->
+        <div class="footer-col">
+          <h4>Departments</h4>
+          <div class="footer-links">
+            <a href="#services" class="footer-link"><i class="fa-solid fa-angle-right"></i> Cardiology & Heart</a>
+            <a href="#services" class="footer-link"><i class="fa-solid fa-angle-right"></i> Neurosurgery Center</a>
+            <a href="#services" class="footer-link"><i class="fa-solid fa-angle-right"></i> Orthopedics & Joint</a>
+            <a href="#services" class="footer-link"><i class="fa-solid fa-angle-right"></i> Precision Oncology</a>
+            <a href="#services" class="footer-link"><i class="fa-solid fa-angle-right"></i> 24/7 Level-1 Trauma</a>
+            <a href="#services" class="footer-link"><i class="fa-solid fa-angle-right"></i> 3.0T Diagnostic Lab</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col footer-newsletter-col">
+          <h4>Medical Insights</h4>
+          <p style="font-size: 0.88rem; color: var(--slate-400); margin-bottom: 1rem;">
+            Subscribe to receive peer-reviewed healthcare articles, longevity updates, and hospital news directly in your inbox.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="Your email address..." required aria-label="Newsletter email">
+              <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.82rem;">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ApexCare Health Systems. All rights reserved. JCI Gold Seal Certified.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#contact">Privacy Policy</a>
+          <a href="#contact">Terms of Service</a>
+          <a href="#contact">HIPAA Statement</a>
+          <a href="#contact">Patient Rights</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
