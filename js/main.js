@@ -1,12 +1,15 @@
 /**
  * ============================================================================
  * PREMIUM HOSPITAL & CLINIC — MAIN APPLICATION SCRIPTS
- * Interactive UI, Navigation, Sliders, Form Validation, and Filters
+ * Preloader, UI Interactions, Sliders, Form Validation, and Filters
  * ============================================================================
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
+
+  // 0. Luxury Medical Preloader
+  initPreloader();
 
   // 1. Sticky Header & Scrollspy
   initStickyHeader();
@@ -34,6 +37,43 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* -------------------------------------------------------------------------
+   0. LUXURY MEDICAL PRELOADER
+   ------------------------------------------------------------------------- */
+function initPreloader() {
+  const preloader = document.getElementById('medical-preloader');
+  const counter = document.getElementById('preloader-counter');
+  
+  if (!preloader) return;
+
+  let progress = 0;
+  const interval = setInterval(() => {
+    progress += Math.floor(Math.random() * 12) + 5;
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(interval);
+      if (counter) counter.innerText = '100%';
+      
+      setTimeout(() => {
+        preloader.classList.add('hidden');
+        // Refresh ScrollTrigger after preloader exit
+        if (typeof ScrollTrigger !== 'undefined') {
+          ScrollTrigger.refresh();
+        }
+      }, 400);
+    } else {
+      if (counter) counter.innerText = progress + '%';
+    }
+  }, 45);
+
+  // Safety fallback after 3.5s
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      preloader.classList.add('hidden');
+    }, 1200);
+  });
+}
+
+/* -------------------------------------------------------------------------
    1. STICKY HEADER & ACTIVE SCROLLSPY
    ------------------------------------------------------------------------- */
 function initStickyHeader() {
@@ -51,7 +91,7 @@ function initStickyHeader() {
 
     // Scrollspy for active link
     let current = '';
-    const scrollPosition = window.scrollY + 200;
+    const scrollPosition = window.scrollY + 220;
 
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;

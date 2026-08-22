@@ -45,6 +45,39 @@
 <body>
 
   <!-- =========================================================================
+       LUXURY MEDICAL PRELOADER
+       ========================================================================= -->
+  <div id="medical-preloader" class="preloader-overlay">
+    <div class="preloader-content">
+      <div class="preloader-emblem">
+        <div class="emblem-pulse-ring"></div>
+        <i class="fa-solid fa-heart-pulse"></i>
+      </div>
+      <div class="preloader-title">ApexCare <span>Health</span></div>
+      
+      <!-- Animated Heartbeat ECG Line -->
+      <div class="ecg-line-container">
+        <svg class="ecg-svg" viewBox="0 0 400 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="ecgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0052FF"/>
+              <stop offset="50%" stop-color="#00D2FF"/>
+              <stop offset="100%" stop-color="#FFFFFF"/>
+            </linearGradient>
+          </defs>
+          <path class="ecg-path-bg" d="M0,30 L80,30 L95,15 L105,45 L115,5 L125,55 L135,30 L200,30 L215,15 L225,45 L235,5 L245,55 L255,30 L400,30" />
+          <path class="ecg-path-pulse" d="M0,30 L80,30 L95,15 L105,45 L115,5 L125,55 L135,30 L200,30 L215,15 L225,45 L235,5 L245,55 L255,30 L400,30" />
+        </svg>
+      </div>
+
+      <div class="preloader-status">
+        <span class="status-text">INITIALIZING CLINICAL TELEMETRY</span>
+        <span id="preloader-counter" class="status-counter">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
        TOP UTILITY BAR
        ========================================================================= -->
   <aside class="top-bar" aria-label="Hospital Contact Information">
@@ -198,9 +231,10 @@
             </div>
             <div class="trust-metric-item">
               <div class="trust-avatar-group">
-                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=100&q=80" alt="Doctor avatar" class="trust-avatar" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1594824813596-f94c483d7fa8?auto=format&fit=crop&w=100&q=80" alt="Doctor avatar" class="trust-avatar" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=100&q=80" alt="Doctor avatar" class="trust-avatar" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=120&q=80" alt="Doctor Alexander Wright" class="trust-avatar">
+                <img src="https://images.unsplash.com/photo-1594824813596-f94c483d7fa8?auto=format&fit=crop&w=120&q=80" alt="Doctor Elena Rostova" class="trust-avatar">
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=120&q=80" alt="Doctor Marcus Vance" class="trust-avatar">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=120&q=80" alt="Doctor Sarah Chen" class="trust-avatar">
               </div>
               <span class="metric-label">50,000+ Patients Served</span>
             </div>
@@ -267,7 +301,7 @@
 
         <a href="tel:18007942273" class="action-item action-emergency">
           <div class="action-icon">
-            <i class="fa-solid fa-ambulance"></i>
+            <i class="fa-solid fa-truck-medical"></i>
           </div>
           <div class="action-content">
             <h4>24/7 Emergency ICU</h4>
@@ -299,7 +333,7 @@
         <!-- Image Composition -->
         <div class="about-visual-composition">
           <div class="about-main-img-wrap">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80" alt="ApexCare state of the art modern hospital interior" class="about-main-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80" alt="ApexCare state of the art modern hospital interior" class="about-main-img">
           </div>
           <div class="about-floating-experience">
             <span class="exp-number">25+</span>
@@ -527,10 +561,10 @@
 
       <div class="tech-grid">
         
-        <!-- Tech 1 -->
+        <!-- Tech 1: Robotic Surgery -->
         <div class="tech-card">
           <div class="tech-img-wrap">
-            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=700&q=80" alt="Da Vinci Surgical Suite" class="tech-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" alt="Da Vinci Xi Robotic Surgical Suite" class="tech-img">
             <span class="tech-badge">Sub-Millimeter</span>
           </div>
           <div class="tech-body">
@@ -539,10 +573,10 @@
           </div>
         </div>
 
-        <!-- Tech 2 -->
+        <!-- Tech 2: 3.0T MRI -->
         <div class="tech-card">
           <div class="tech-img-wrap">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="High Resolution MRI" class="tech-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="BioMatrix 3.0T MRI Scanner" class="tech-img">
             <span class="tech-badge">3.0 Tesla Field</span>
           </div>
           <div class="tech-body">
@@ -551,10 +585,10 @@
           </div>
         </div>
 
-        <!-- Tech 3 -->
+        <!-- Tech 3: AI Genomic Sequencing -->
         <div class="tech-card">
           <div class="tech-img-wrap">
-            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=700&q=80" alt="AI Genomic Pathology" class="tech-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="AI Genomic Pathology Laboratory" class="tech-img">
             <span class="tech-badge">AI Accelerated</span>
           </div>
           <div class="tech-body">
@@ -621,10 +655,10 @@
 
       <div class="doctors-grid">
         
-        <!-- Doctor 1 -->
+        <!-- Doctor 1: Dr. Alexander Wright -->
         <div class="doctor-card">
           <div class="doctor-img-wrap">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=80" alt="Dr. Alexander Wright, Chief of Cardiology" class="doctor-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Dr. Alexander Wright, Chief of Cardiology" class="doctor-img">
             <span class="doctor-specialty-badge">Cardiology</span>
           </div>
           <div class="doctor-info">
@@ -647,10 +681,10 @@
           </div>
         </div>
 
-        <!-- Doctor 2 -->
+        <!-- Doctor 2: Dr. Elena Rostova -->
         <div class="doctor-card">
           <div class="doctor-img-wrap">
-            <img src="https://images.unsplash.com/photo-1594824813596-f94c483d7fa8?auto=format&fit=crop&w=700&q=80" alt="Dr. Elena Rostova, Neurosurgeon" class="doctor-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1594824813596-f94c483d7fa8?auto=format&fit=crop&w=800&q=80" alt="Dr. Elena Rostova, Neurosurgeon" class="doctor-img">
             <span class="doctor-specialty-badge">Neurosurgery</span>
           </div>
           <div class="doctor-info">
@@ -673,10 +707,10 @@
           </div>
         </div>
 
-        <!-- Doctor 3 -->
+        <!-- Doctor 3: Dr. Marcus Vance -->
         <div class="doctor-card">
           <div class="doctor-img-wrap">
-            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=700&q=80" alt="Dr. Marcus Vance, Orthopedic Surgery" class="doctor-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80" alt="Dr. Marcus Vance, Orthopedic Surgery" class="doctor-img">
             <span class="doctor-specialty-badge">Orthopedics</span>
           </div>
           <div class="doctor-info">
@@ -699,10 +733,10 @@
           </div>
         </div>
 
-        <!-- Doctor 4 -->
+        <!-- Doctor 4: Dr. Sarah Chen -->
         <div class="doctor-card">
           <div class="doctor-img-wrap">
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80" alt="Dr. Sarah Chen, Oncology & Genomics" class="doctor-img" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dr. Sarah Chen, Oncology & Genomics" class="doctor-img">
             <span class="doctor-specialty-badge">Genomic Oncology</span>
           </div>
           <div class="doctor-info">
@@ -758,7 +792,7 @@
               </p>
               <div class="testimonial-author-row">
                 <div class="author-info-wrap">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Robert Sterling" class="author-avatar" loading="lazy">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Robert Sterling" class="author-avatar">
                   <div>
                     <h4 class="author-name">Robert Sterling</h4>
                     <span class="author-procedure"><i class="fa-solid fa-circle-check"></i> Robotic Heart Valve Procedure • Verified Patient</span>
@@ -780,7 +814,7 @@
               </p>
               <div class="testimonial-author-row">
                 <div class="author-info-wrap">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Claire Kensington" class="author-avatar" loading="lazy">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Claire Kensington" class="author-avatar">
                   <div>
                     <h4 class="author-name">Claire Kensington</h4>
                     <span class="author-procedure"><i class="fa-solid fa-circle-check"></i> Micro-Neurosurgery • Verified Patient</span>
@@ -802,7 +836,7 @@
               </p>
               <div class="testimonial-author-row">
                 <div class="author-info-wrap">
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Sterling" class="author-avatar" loading="lazy">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Sterling" class="author-avatar">
                   <div>
                     <h4 class="author-name">David Sterling</h4>
                     <span class="author-procedure"><i class="fa-solid fa-circle-check"></i> Executive Wellness Member • Verified Patient</span>
